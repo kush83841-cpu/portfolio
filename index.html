@@ -1,0 +1,140 @@
+<!-- Kush Portfolio v1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kush | Full-Stack Web Developer</title>
+    <meta name="description"
+        content="Kush — Full-Stack Web Developer (Python & Flask). BCA student building live web apps.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="nav">
+            <a href="#home" class="logo">Kush<span>.</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <p class="hero-eyebrow">Hello, I'm</p>
+            <h1>Kush</h1>
+            <h2>Full-Stack Web Developer <span>| Python &amp; Flask</span></h2>
+            <p class="hero-text">BCA student building live web apps with Python, Flask and JavaScript — deployed,
+                working, and used by real people.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm a BCA student at World College of Technology and Management (2025–2028). I build and deploy real web
+                applications with Python and Flask — from a digital record book for a real shop owner to expense
+                trackers and task managers.</p>
+            <p>I'm looking for a remote Python / web development internship, and I'm open to freelance website work.</p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <h3>ShopLedge</h3>
+                    <p>Digital bahi-khata for a real shop owner — tracks udhaar (credit) records, built exactly to the
+                        owner's needs.</p>
+                    <p class="project-tech">Python · Flask · SQLite</p>
+                    <a href="https://shopledge.onrender.com" target="_blank" rel="noopener">Live Demo →</a>
+                    <a href="https://github.com/kush83841-cpu/ShopLedge" target="_blank" rel="noopener">GitHub →</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>SpendWise</h3>
+                    <p>Expense tracker with login, category-wise spending and a monthly dashboard chart.</p>
+                    <p class="project-tech">Python · Flask · SQLite · Chart.js</p>
+                    <a href="https://spendwise-1-8jb4.onrender.com" target="_blank" rel="noopener">Live Demo →</a>
+                    <a href="https://github.com/kush83841-cpu/SpendWise" target="_blank" rel="noopener">GitHub →</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>ToDo</h3>
+                    <p>Task manager with login, per-user tasks, due dates and search.</p>
+                    <p class="project-tech">Python · Flask · SQLite</p>
+                    <a href="https://to-do-m0s1.onrender.com" target="_blank" rel="noopener">Live Demo →</a>
+                    <a href="https://github.com/kush83841-cpu/TO-DO" target="_blank" rel="noopener">GitHub →</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Zaika</h3>
+                    <p>Demo restaurant website — menu, gallery, testimonials and a book-a-table popup.</p>
+                    <p class="project-tech">HTML5 · CSS3 · JavaScript</p>
+                    <a href="https://restaurantzaika.netlify.app" target="_blank" rel="noopener">Live Demo →</a>
+                    <a href="https://github.com/kush83841-cpu/zaika-restaurant" target="_blank" rel="noopener">GitHub
+                        →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skill-list">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Flask</li>
+                <li>SQLite</li>
+                <li>REST APIs</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Responsive Web Design</li>
+                <li>Render</li>
+                <li>Netlify</li>
+                <li>WordPress</li>
+            </ul>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <p>Have a project in mind, or an internship opportunity? Send me a message.</p>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="contactName" placeholder="Your name" required>
+                <input type="email" id="contactEmail" placeholder="Your email" required>
+                <textarea id="contactMessage" placeholder="Your message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <p id="formNote" class="form-note"></p>
+            </form>
+            <p class="contact-links">
+                <a href="https://www.linkedin.com/in/kush-verma-9b2b67396" target="_blank" rel="noopener">LinkedIn</a> ·
+                <a href="https://github.com/kush83841-cpu" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Kush — Built with HTML, CSS &amp; JavaScript</p>
+    </footer>
+
+</body>
+
+</html>
